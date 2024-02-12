@@ -3,10 +3,10 @@ def palindrome(word):
     word = word.replace(" ", "")
     if not word:
         return False 
-    if word == word[::-1]:
-        return True
+    return word == word[::-1]
+    
 
 if __name__ == '__main__': 
     #REMOVE PASS AND YOUR CODE GOES HERE
     word = input()
-    print(palindrome)
+    print(palindrome(word))
